@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import WithNavbar from "./components/navigation/WithNavbar";
+import WithNavbar from "./shared/components/navigation/WithNavbar";
+import WithRouter from "./Router";
 
 const appTheme = {
   primary: "#51ccc5",
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <ThemeProvider theme={appTheme}>
       <WithNavbar />
+      <WithRouter />
     </ThemeProvider>
   );
 };
