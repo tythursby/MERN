@@ -1,11 +1,17 @@
 import React from "react";
-import UserList from "../components/UserList";
+import UserList from "../components/user/UserList";
 
 const Users = () => {
   const USERS = [
     {
-      id: "u1",
+      userId: "u1",
       name: "Ty T",
+      image: "http://placekitten.com/g/150/150",
+      places: 3,
+    },
+    {
+      userId: "u2",
+      name: "Ty S",
       image: "http://placekitten.com/g/150/150",
       places: 3,
     },
